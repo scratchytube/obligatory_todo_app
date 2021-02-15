@@ -1,10 +1,20 @@
 import React from 'react'
+import './Todo.css'
+import { List, 
+    ListItem, 
+    // ListItemAvatar, 
+    ListItemText } from '@material-ui/core';
 
-function Todo() {
+const Todo = ({ text }) => {
     return (
-        <div>
-            
-        </div>
+
+        <List>
+            <ListItem>
+                {/* <ListItemAvatar>
+                </ListItemAvatar> */}
+                <ListItemText primary={text} secondary="Do this stupid⏰" />
+            </ListItem>
+        </List>
     )
 }
 
